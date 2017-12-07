@@ -34,9 +34,9 @@ describe('a new note can be displayed as a link with a hash', function () {
   return assert.isTrue(noteListView.noteListModelToHTML() === HTMLstring)
 })
 
-describe('whole note is displayed', function () {
-  var noteListView = new NoteListView(new NoteList());
-  noteListView.noteListModel.createAndStoreNote('the quick brown fox jumped over the laxy dog')
-  
-
-})
+// describe('whole note is displayed', function () {
+//   var noteListView = new NoteListView(new NoteList());
+//   noteListView.noteListModel.createAndStoreNote('the quick brown fox jumped over the laxy dog')
+//
+//
+// })
