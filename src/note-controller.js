@@ -39,18 +39,3 @@ notecontroller.createNote('Hello Oleg')
 notecontroller.renderHTML()
 
 notecontroller.makeUrlChangeShowSingleNote()
-// window.addEventListener("hashchange", function(){
-//       var noteId = window.location.hash.split('#')[1]
-//       var noteObject = notecontroller.specificNote(noteId)
-//       var singleNoteView = new SingleNoteView(noteObject)
-//       document.getElementById('app').innerHTML = singleNoteView.noteTextToHTML()
-//     });
-//
-  //
-  // NoteController.prototype.showNoteOnePage = function(){
-  //   noteid = this.getNoteIdFromHash(window.location)
-  // }
-  //
-  // NoteController.prototype.getNoteIdFromHash = function (url) {
-  //   return url.hash.split('#')[1]
-  // }
