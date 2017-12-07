@@ -11,8 +11,8 @@
   }
 
   NoteList.prototype.createAndStoreNote = function (text) {
-    this._noteCount++;
     this.notes.push(new this.noteClass(text, this._noteCount))
+    this._noteCount++;
   }
 
   exports.NoteList = NoteList;

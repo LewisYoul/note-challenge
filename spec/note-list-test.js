@@ -22,7 +22,7 @@ describe('ID is incremented and assigned to a Note on creation', function () {
   noteList.createAndStoreNote('hi')
   noteList.createAndStoreNote('hello')
   noteList.createAndStoreNote('hello world')
-  return assert.isTrue(noteList.returnAllNotes()[2].id === 3)
+  return assert.isTrue(noteList.returnAllNotes()[2].id === 2)
 })
 
 describe('checks getter method returns array', function(){

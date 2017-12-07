@@ -30,7 +30,7 @@ describe('trims a string to 20 characters', function(){
 describe('a new note can be displayed as a link with a hash', function () {
   var noteListView = new NoteListView(new NoteList());
   noteListView.noteListModel.createAndStoreNote('hello world')
-  var HTMLstring = '<ul><li><div><a href="#1">hello world</a></div></li></ul>'
+  var HTMLstring = '<ul><li><div><a href="#0">hello world</a></div></li></ul>'
   return assert.isTrue(noteListView.noteListModelToHTML() === HTMLstring)
 })
 
