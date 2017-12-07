@@ -46,3 +46,18 @@ describe('renders single note to page upon click', function(){
   elem.click()
   return assert.isTrue(elem.innerHTML === 'test note')
 });
+
+describe('adds a note and renders it in the note list view HTML', function(){
+  var noteController = new NoteController()
+  document.getElementById('app').innerHTML = '' //empty the 'app' innerHTML
+  document.getElementById('newNote').value = 'This is a test note' // write the note in the textarea
+  console.log(document.getElementById('newNote').value)
+  button = document.getElementById('button')
+  button.addEventListener("click", function(){ //add event listener to the button so can only be clicked once
+    button.disabled = "true";
+  });
+  button.click(); //click the button
+  console.log(document.getElementById('app').innerHTML)
+  // document.getElementById('button').disabled = true;
+  return assert.isTrue(document.getElementById('app').innerHTML === '<ul><li><div><a id="test" href="#0">This is a test note</a></div></li></ul>')
+});

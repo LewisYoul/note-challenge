@@ -40,11 +40,11 @@
 //
 
 var notecontroller = new NoteController()
-notecontroller.createNote('Hello I am a student at Makers Academy and its really expensive')
-
-notecontroller.createNote('Hello Oleg')
+// notecontroller.createNote('Hello I am a student at Makers Academy and its really expensive')
+//
+// notecontroller.createNote('Hello Oleg')
 
 notecontroller.renderHTML()
-
-notecontroller.makeUrlChangeShowSingleNote()
-notecontroller.submitNewNote();
+//
+// notecontroller.makeUrlChangeShowSingleNote()
+// notecontroller.submitNewNote();
