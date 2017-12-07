@@ -26,6 +26,14 @@
       document.getElementById('app').innerHTML = singleNoteView.noteTextToHTML()
     });
   }
+  NoteController.prototype.submitNewNote = function() {
+    var self = this
+    window.addEventListener('submit', function(event) {
+      // self.createNote(event.target.elements["0"].value)
+      event.preventDefault();
+      var noteText = document.getElementById("newNote").value
+   });
+  };
 
   exports.NoteController = NoteController;
 })(this);
@@ -39,3 +47,4 @@ notecontroller.createNote('Hello Oleg')
 notecontroller.renderHTML()
 
 notecontroller.makeUrlChangeShowSingleNote()
+notecontroller.submitNewNote();
